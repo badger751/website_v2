@@ -1,13 +1,13 @@
 "use client"
 import { BentoGrid, BentoGridItem } from "@/components/ui/betnto-grid";
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { WavyBackground } from "@/components/ui/wave";
 import { Button } from "@/components/ui/cssbutton";
 import Link from 'next/link';
 import Header from '@/components/Header';
 import { createClient } from '@/utils/server'
-
+import Lenis from 'lenis'
 
 import {
   IconArrowWaveRightUp,
@@ -18,10 +18,37 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import 'lenis/dist/lenis.css'
 
 
 
-export default async function Home() {
+
+export default function Home() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      autoRaf: true, // Automatically handle requestAnimationFrame
+      // Enable smooth scrolling
+      // Enable smooth scrolling on touch devices
+    });
+
+    // Update Lenis on each frame
+    const animate = (time: number) => {
+      lenis.raf(time);
+      requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+
+    // Log scroll events (optional)
+    lenis.on("scroll", (e) => {
+      console.log(e);
+    });
+
+    return () => {
+      lenis.destroy(); // Clean up Lenis on unmount
+    };
+  }, []);
+
   const lifestyleItems = [
     {
       title: "The Dawn of Innovation",
@@ -66,7 +93,6 @@ export default async function Home() {
       header: <Skeleton />,
       icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
     },
-    // ... other lifestyle items
   ];
 
   const healthItems = [
@@ -113,7 +139,6 @@ export default async function Home() {
       header: <Skeleton />,
       icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
     },
-    // ... other health items
   ];
 
   return (
@@ -154,6 +179,7 @@ export default async function Home() {
     </div>
   );
 }
+
 
 
 const Skeleton = () => (
