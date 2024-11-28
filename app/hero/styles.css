@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+    header {
+      font-size: 0.9em; /* Reduce font size */
+      padding: 1rem; /* Reduce padding */
+    }
+  
+    header a {
+      padding: 0.5rem 1rem; /* Reduce padding for navigation links */
+    }
+  }

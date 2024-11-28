@@ -13,3 +13,13 @@
 .font-yeseva-one {
   font-family: 'Yeseva One', cursive;
 }
+.hero {
+  @apply overflow-x-hidden; /* Disable horizontal scrolling */
+}
+
+@media (max-width: 767px) { /* Adjust breakpoint as needed */
+  .hero h1 {
+    flex-direction: column; /* Stack text vertically on smaller screens */
+    align-items: center; /* Center the text vertically */
+  }
+}
