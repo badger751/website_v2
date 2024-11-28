@@ -6,7 +6,7 @@ const Hero = () => {
   const words = [
     {
       text : "SR",
-      classname : "text-red-700  ",
+      classname : "text-red-700",
     },
 
     {
