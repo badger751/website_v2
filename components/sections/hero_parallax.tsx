@@ -8,7 +8,7 @@ import '@/public/images/image_3.jpg';
 import '@/public/images/image_4.jpg';
 import '@/public/images/image_5.jpg';
 import '@/public/images/image_6.jpg';
-export function HeroParallaxDemo() {
+export default function HeroParallaxDemo() {
   
   return(
     <div className="bg-black" >
