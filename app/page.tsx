@@ -4,6 +4,7 @@ import Hero from "@/components/sections/hero";
 import { MenuItem } from '@/components/ui/navbar';
 import NavbarDemo from '@/components/sections/Navbar';
 import HeroParallaxDemo from '@/components/sections/hero_parallax';
+import Footer from '@/components/sections/footer';
 
 export default function Home(){
   return(
@@ -11,7 +12,7 @@ export default function Home(){
   <NavbarDemo/>
   <Hero/>
   <HeroParallaxDemo/>
-  
+  <Footer/>
 </div>
   )
 }
