@@ -6,13 +6,13 @@ import { FlipWords } from '../ui/flip-words';
 const Hero = () => {
   const words = [
     {
-      text : "SR",
-      classname : "text-red-700",
+      text: "SR",
+      className: "text-red-700 dark:text-blue-500",
     },
 
     {
       text: "Samachar",
-      className: "text-red-700 dark:text-blue-500",
+      className: "text-white-700 dark:text-blue-500",
     }
   ];
   const tag = ['सत्य','सरल','निष्पक्ष']
@@ -37,4 +37,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero;0

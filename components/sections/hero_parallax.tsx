@@ -11,7 +11,7 @@ import '@/public/images/image_6.jpg';
 export default function HeroParallaxDemo() {
   
   return(
-    <div className="bg-black" >
+    <div className="bg-white-200" >
     <HeroParallax products={products} />
     </div>
   ) ;

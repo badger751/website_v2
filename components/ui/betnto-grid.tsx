@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import React from "react";
 
 export const BentoGrid = ({
   className,
@@ -25,19 +26,32 @@ export const BentoGridItem = ({
   description,
   header,
   icon,
+  href,
+  onClick, // Added onClick prop
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   header?: React.ReactNode;
   icon?: React.ReactNode;
+  href?: string;
+  onClick?: () => void; // Declare onClick as an optional prop
 }) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick(); // Trigger the provided onClick handler
+    } else if (href) {
+      window.open(href, "_blank", "noopener,noreferrer"); // Fallback to opening href
+    }
+  };
+
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
+        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4 cursor-pointer",
         className
       )}
+      onClick={handleClick} // Attach the click handler
     >
       {header}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
