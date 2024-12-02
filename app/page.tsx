@@ -7,6 +7,7 @@ import Hero from "@/components/sections/hero";
 import NavbarDemo from "@/components/sections/Navbar";
 import HeroParallaxDemo from "@/components/sections/hero_parallax";
 import Footer from "@/components/sections/footer";
+import Script from "next/script";
 
 export default function Home() {
   const sectionVariants = {
@@ -82,6 +83,8 @@ export default function Home() {
       >
         <Footer />
       </motion.div>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5865247638883812"
+     crossOrigin="anonymous"></script>
     </motion.div>
   );
 }
