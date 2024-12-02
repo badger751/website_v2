@@ -1,15 +1,13 @@
 "use client"
 
 import BlogLayout from "@/components/ui/blog_layout";
-import { fetchPostById } from "@/lib/fetchdata";
+import { fetchPostById, fetchPostByIdb } from "@/lib/fetchdata";
 import { useEffect, useState } from "react";
 
 interface Post {
   id: string;
   title: string;
   description: string;
-  header: string
-  icon: string 
   [key: string]: any; // Add more fields as needed
   href: string;
 }
@@ -29,7 +27,7 @@ export default function BlogPage({ params }: BlogPageProps) {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const post = await fetchPostById(postId);
+        const post = await fetchPostByIdb(postId);
         setPost(post);
       } catch (error) {
         console.error("Error fetching post:", error);

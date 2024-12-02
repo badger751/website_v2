@@ -18,7 +18,6 @@ const Home = () => {
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-xl">
       <h1 className="mb-5 text-5xl md:text-6xl lg:text-9xl font-bold">SR Samachar</h1>
-      <button className="btn btn-primary">Get Started</button>
     </div>
   </div>
 </div>

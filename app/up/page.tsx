@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/betnto-grid";
 import fetchData from "@/lib/fetchdata";
 import { useRouter } from "next/navigation";
+import Footer from "@/components/sections/footer";
+import NavbarDemo from "@/components/sections/Navbar";
 
 interface Item {
   id: string; // Added `id` field to match the post structure
@@ -31,19 +33,33 @@ export default function BentoGridDemo() {
   };
 
   return (
-    <BentoGrid className="max-w-4xl mx-auto">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={item.id} // Use item.id as the key
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          icon={item.icon}
-          href={item.href}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-          onClick={() => handleItemClick(item.id)} // Add click handler
-        />
-      ))}
-    </BentoGrid>
+    <div className="min-h-screen flex flex-col justify-between bg-customYellow overflow-x-hidden">
+      {/* Navbar */}
+      <div className="mb-8">
+        <NavbarDemo />
+      </div>
+
+      {/* BentoGrid */}
+      <div className="flex-grow mb-8">
+        <BentoGrid className="max-w-9xl mx-auto h-full">
+          {items.map((item, i) => (
+            <BentoGridItem
+              key={item.id} // Use item.id as the key
+              title={item.title}
+              header={item.header}
+              icon={item.icon}
+              href={item.href}
+              className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+              onClick={() => handleItemClick(item.id)} // Add click handler
+            />
+          ))}
+        </BentoGrid>
+      </div>
+
+      {/* Footer */}
+      <div className="mt-auto">
+        <Footer />
+      </div>
+    </div>
   );
 }

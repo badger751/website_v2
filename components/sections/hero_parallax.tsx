@@ -11,7 +11,7 @@ import '@/public/images/image_6.jpg';
 export default function HeroParallaxDemo() {
   
   return(
-    <div className="bg-white-200" >
+    <div className="bg-customYellow" >
     <HeroParallax products={products} />
     </div>
   ) ;
@@ -19,7 +19,7 @@ export default function HeroParallaxDemo() {
 export const products = [
   {
     title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    link: "/up",
     thumbnail:
       "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },

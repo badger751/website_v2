@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -25,10 +25,10 @@ export const MenuItem = ({
   children?: React.ReactNode;
 }) => {
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative ">
+    <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-white hover:opacity-[0.9] dark:text-white"
+        className="cursor-pointer text-[#333] hover:opacity-[0.9] dark:text-[#333]"
       >
         {item}
       </motion.p>
@@ -42,13 +42,10 @@ export const MenuItem = ({
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
+                layoutId="active"
                 className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
-                <motion.div
-                  layout // layout ensures smooth animation
-                  className="w-max h-full p-4"
-                >
+                <motion.div layout className="w-max h-full p-4">
                   {children}
                 </motion.div>
               </motion.div>
@@ -67,13 +64,39 @@ export const Menu = ({
   setActive: (item: string | null) => void;
   children: React.ReactNode;
 }) => {
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollPos, setLastScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setShowNavbar(currentScrollPos < lastScrollPos || currentScrollPos <= 0);
+      setLastScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollPos]);
+
   return (
-    <nav
-      onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-transparent shadow-input flex justify-center space-x-4 px-8 py-6 "
+    <motion.nav
+      initial={{ y: 0, opacity: 1 }}
+      animate={{
+        y: showNavbar ? 0 : -100,
+        opacity: showNavbar ? 1 : 0,
+      }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="fixed top-0 left-0 w-full z-50"
     >
-      {children}
-    </nav>
+      <div
+        onMouseLeave={() => setActive(null)}
+        className="relative w-full backdrop-blur-md bg-white/30 dark:bg-black/30 shadow-input flex justify-center space-x-4 px-8 py-6"
+      >
+        {children}
+      </div>
+    </motion.nav>
   );
 };
 
@@ -113,7 +136,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
   return (
     <Link
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black "
+      className="text-neutral-700 dark:text-neutral-200 hover:text-black"
     >
       {children}
     </Link>
@@ -124,7 +147,7 @@ export const HoveredLinks = ({ children, ...rest }: any) => {
   return (
     <Link
       {...rest}
-      className="text-white dark:text-neutral-200 hover:text-black "
+      className="text-[#333] dark:text-neutral-200 hover:text-black"
     >
       {children}
     </Link>
