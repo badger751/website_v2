@@ -19,95 +19,95 @@ export default function HeroParallaxDemo() {
 export const products = [
   {
     title: "Moonbeam",
-    link: "/up",
+    link: "/soon",
     thumbnail:
       "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
   {
     title: "Cursor",
-    link: "https://cursor.so",
+    link: "/soon",
     thumbnail:
-      "/images/image_2.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
   {
     title: "Rogue",
-    link: "https://userogue.com",
+    link: "/soon",
     thumbnail:
-      "/images/image_3.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
 
   {
     title: "Editorially",
-    link: "https://editorially.org",
+    link: "/soon",
     thumbnail:
-      "/images/image_4.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
   {
     title: "Editrix AI",
-    link: "https://editrix.ai",
+    link: "/soon",
     thumbnail:
-      "/images/image_5.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
   {
     title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    link: "/soon",
     thumbnail:
-      "/images/image_1.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
 
   {
     title: "Algochurn",
-    link: "https://algochurn.com",
+    link: "/soon",
     thumbnail:
-      "/images/image_6.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
   {
     title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    link: "/soon",
     thumbnail:
-      "/images/image_1.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
   {
     title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    link: "/soon",
     thumbnail:
-      "/images/image_3.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
   {
     title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    link: "/soon",
     thumbnail:
-      "/images/image_4.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
   {
     title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    link: "/soon",
     thumbnail:
-      "/images/image_5.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
 
   {
     title: "Creme Digital",
-    link: "https://cremedigital.com",
+    link: "/soon",
     thumbnail:
-      "/images/image_6.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
   {
     title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    link: "/soon",
     thumbnail:
-      "/images/image_2.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
   {
     title: "Invoker Labs",
-    link: "https://invoker.lol",
+    link: "/soon",
     thumbnail:
-      "/images/image_6.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
   {
     title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
+    link: "/soon",
     thumbnail:
-      "/images/image_1.png",
+      "https://qjzomytkedaxixmlxiku.supabase.co/storage/v1/object/sign/News_post/Screenshot%20from%202024-11-22%2001-27-55.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJOZXdzX3Bvc3QvU2NyZWVuc2hvdCBmcm9tIDIwMjQtMTEtMjIgMDEtMjctNTUucG5nIiwiaWF0IjoxNzMyNzkzOTI2LCJleHAiOjE3NjQzMjk5MjZ9.iCY9KNRM5XugJPG-8RknO2jwGOzzNH8VgrMKBl_4Qjg&t=2024-11-28T11%3A38%3A46.213Z",
   },
 ];

@@ -18,22 +18,22 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
-      <HoveredLinks href="/hobby">Home</HoveredLinks>
-      <HoveredLinks href="/hobby">Live</HoveredLinks>
+      <HoveredLinks href="/">Home</HoveredLinks>
+      <HoveredLinks href="/soon">Live</HoveredLinks>
         <MenuItem setActive={setActive} active={active} item="States">
         <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Uttar Pradesh</HoveredLink>
-            <HoveredLink href="/individual">Delhi</HoveredLink>
-            <HoveredLink href="/team">Bihar</HoveredLink>
-            <HoveredLink href="/enterprise">Madhya pradesh</HoveredLink>
+            <HoveredLink href="/up">Uttar Pradesh</HoveredLink>
+            <HoveredLink href="/soonl">Delhi</HoveredLink>
+            <HoveredLink href="/soon">Bihar</HoveredLink>
+            <HoveredLink href="/soon">Madhya pradesh</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Categories">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Health</HoveredLink>
-            <HoveredLink href="/individual">Lifestyle</HoveredLink>
-            <HoveredLink href="/team">Dharm</HoveredLink>
-            <HoveredLink href="/enterprise">Bollywood</HoveredLink>
+            <HoveredLink href="/soon">Health</HoveredLink>
+            <HoveredLink href="/soon">Lifestyle</HoveredLink>
+            <HoveredLink href="/soon">Dharm</HoveredLink>
+            <HoveredLink href="/soon">Bollywood</HoveredLink>
           </div>
         </MenuItem>
       </Menu>
