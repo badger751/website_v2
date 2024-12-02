@@ -6,7 +6,6 @@ import { fetchLiveStream } from '@/lib/fetchdata';
 
 export default function LivePage({ streamId }: { streamId: string }) {
   const [live, setLive] = useState<{ uri: string; title: string; description: string } | null>(null);
-  streamId = '5';
 
   useEffect(() => {
     const getLiveStream = async () => {
@@ -18,9 +17,7 @@ export default function LivePage({ streamId }: { streamId: string }) {
       }
     };
 
-    if (streamId) {
-      getLiveStream();
-    }
+    getLiveStream();
   }, [streamId]);
 
   return (
