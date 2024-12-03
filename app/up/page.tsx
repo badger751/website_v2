@@ -39,6 +39,10 @@ export default function BentoGridDemo() {
         <NavbarDemo />
       </div>
 
+      {/* Heading Title */}
+      <h1 className="text-4xl font-light text-center mb-8" style={{ fontFamily: 'Open Sans', fontWeight: 300 }}>
+      </h1>
+
       {/* BentoGrid */}
       <div className="flex-grow mb-8">
         <BentoGrid className="max-w-9xl mx-auto h-full">

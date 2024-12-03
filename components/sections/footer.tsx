@@ -7,17 +7,17 @@ export default function Footer(){
         <footer className="footer bg-black text-base-content p-10">
   <nav>
     <h6 className="footer-title"  >Services</h6>
-    <a className="link link-hover" href="/soon" >News</a>
-    <a className="link link-hover" href="/soon" >Investigation</a>
-    <a className="link link-hover" href="/soon" >Videos</a>
-    <a className="link link-hover" href="/soon" >Debate</a>
+    <a className="link link-hover" href="/" >News</a>
+    <a className="link link-hover" href="/" >Investigation</a>
+    <a className="link link-hover" href="/" >Videos</a>
+    <a className="link link-hover" href="/" >Debate</a>
   </nav>
   <nav>
     <h6 className="footer-title">Company</h6>
-    <a className="link link-hover" href="/soon" >About us</a>
-    <a className="link link-hover" href="/soon" >Contact</a>
-    <a className="link link-hover" href="/soon" >Jobs</a>
-    <a className="link link-hover" href="/soon" >Press kit</a>
+    <a className="link link-hover" href="/aboutus" >About us</a>
+    <a className="link link-hover" href="/aboutus" >Contact</a>
+    <a className="link link-hover" href="/" >Jobs</a>
+    <a className="link link-hover" href="/" >Press kit</a>
   </nav>
   <nav>
     <h6 className="footer-title">Social</h6>
