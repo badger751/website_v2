@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
  /* Import Yeseva One from Google Fonts */
 /* Assuming you've added the font files to public/fonts */
 @font-face {
@@ -15,6 +17,15 @@
 }
 .hero {
   @apply overflow-x-hidden; /* Disable horizontal scrolling */
+}
+.text-openSansLight {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.text-openSansRegular {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 @media (max-width: 767px) { /* Adjust breakpoint as needed */
