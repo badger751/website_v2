@@ -38,29 +38,34 @@ const BlogLayout = ({ post }: { post: BlogPost }) => {
 
   return (
     <div className="bg-customYellow min-h-screen">
+      <div className="mb-12">
       <NavbarDemo />
+      
+</div>
       <div className="container mx-auto px-4 pt-24">
-        <div className="lg:flex lg:justify-start lg:space-x-8">
-          <div className="lg:w-1/2 w-full">
+        {/* Outer grid container */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Left side containing title and image */}
+          <div className="flex flex-col justify-start">
             <h2
-              className="text-5xl font-light text-black mb-8"
+              className="text-5xl font-light text-black mb-4"
               style={{ fontFamily: "'Open Sans', sans-serif" }}
             >
               {post.title}
             </h2>
-            {/* Updated Image Box */}
-            <div className="mb-8 flex justify-start">
+            {/* Image directly below the title */}
+            <div className="flex justify-start mb-8">
               <img
                 src={post.icon}
                 alt="Icon"
                 className="w-full max-w-lg h-auto rounded-lg"
               />
             </div>
-            {/* Updated Description */}
-            <div
-              className="text-left text-2xl text-black lg:pr-8 leading-relaxed mb-8"
-              style={{ fontFamily: "'Open Sans', sans-serif" }}
-            >
+          </div>
+
+          {/* Right side containing description */}
+          <div className="flex flex-col justify-start">
+            <div className="text-left text-2xl text-black leading-relaxed">
               <p>{post.description}</p>
             </div>
             <a
@@ -70,13 +75,9 @@ const BlogLayout = ({ post }: { post: BlogPost }) => {
               Read More
             </a>
           </div>
-          {/* Placeholder for right-side content on large screens */}
-          <div className="hidden lg:block lg:w-1/2">
-            {/* Future content can go here */}
-          </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

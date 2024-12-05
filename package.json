@@ -16,7 +16,7 @@
     "@splinetool/runtime": "^1.0.82",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.46.2",
-    "@tabler/icons-react": "^3.22.0",
+    "@tabler/icons-react": "^3.24.0",
     "@types/three": "^0.170.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",

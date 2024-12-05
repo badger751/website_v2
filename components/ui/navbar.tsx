@@ -92,9 +92,21 @@ export const Menu = ({
     >
       <div
         onMouseLeave={() => setActive(null)}
-        className="relative w-full backdrop-blur-md bg-white/30 dark:bg-black/30 shadow-input flex justify-center space-x-4 px-8 py-6"
+        className="relative w-full backdrop-blur-md bg-white/30 dark:bg-black/30 shadow-input flex justify-between items-center px-8 py-6"
       >
-        {children}
+        {/* Logo on the left */}
+        <div className="flex items-center">
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            width={50}
+            height={50}
+            className="rounded-full"
+          />
+        </div>
+
+        {/* Navigation items */}
+        <div className="flex justify-center space-x-4">{children}</div>
       </div>
     </motion.nav>
   );

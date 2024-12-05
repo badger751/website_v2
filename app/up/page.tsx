@@ -40,7 +40,8 @@ export default function BentoGridDemo() {
       </div>
 
       {/* Heading Title */}
-      <h1 className="text-4xl font-light text-center mb-8" style={{ fontFamily: 'Open Sans', fontWeight: 300 }}>
+      <h1 className="text-7xl font-light text-black text-center mb-8" style={{ fontFamily: 'Open Sans', fontWeight: 300 }}>
+        News
       </h1>
 
       {/* BentoGrid */}

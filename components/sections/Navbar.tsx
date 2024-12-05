@@ -19,23 +19,9 @@ function Navbar({ className }: { className?: string }) {
     >
       <Menu setActive={setActive}>
       <HoveredLinks href="/">Home</HoveredLinks>
+      <HoveredLinks href="/soon">Videos</HoveredLinks>
+      <HoveredLinks href="/soon">News</HoveredLinks>
       <HoveredLinks href="/soon">Live</HoveredLinks>
-        <MenuItem setActive={setActive} active={active} item="States">
-        <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/up">Uttar Pradesh</HoveredLink>
-            <HoveredLink href="/soonl">Delhi</HoveredLink>
-            <HoveredLink href="/soon">Bihar</HoveredLink>
-            <HoveredLink href="/soon">Madhya pradesh</HoveredLink>
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Categories">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/soon">Health</HoveredLink>
-            <HoveredLink href="/soon">Lifestyle</HoveredLink>
-            <HoveredLink href="/soon">Dharm</HoveredLink>
-            <HoveredLink href="/soon">Bollywood</HoveredLink>
-          </div>
-        </MenuItem>
       </Menu>
     </div>
   );
