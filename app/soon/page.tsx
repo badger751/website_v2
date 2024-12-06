@@ -6,17 +6,14 @@ export default function ComingSoon() {
   const router = useRouter();
 
   const handleGoBack = () => {
-    router.push("/"); // Navigate to the home page
+    router.push("/");
   };
 
   return (
-    <div
-      className="min-h-screen flex flex-col justify-center items-center bg-customYellow"
-      style={{ fontFamily: "Open Sans, Light, 300" }}
-    >
-      <h1 className="text-9xl text-center mb-4">Coming Soon</h1>
+    <div className="min-h-screen flex flex-col justify-center items-center bg-customYellow overflow-x-hidden">
+      <h1 className="text-6xl md:text-4xl lg:text-6xl text-center">Coming Soon</h1>
       <p
-        className="text-xl cursor-pointer"
+        className="text-lg md:text-base lg:text-lg text-center cursor-pointer"
         onClick={handleGoBack}
       >
         Press here to go back

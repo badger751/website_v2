@@ -68,12 +68,6 @@ const BlogLayout = ({ post }: { post: BlogPost }) => {
             <div className="text-left text-2xl text-black leading-relaxed">
               <p>{post.description}</p>
             </div>
-            <a
-              href={post.href}
-              className="text-blue-500 hover:underline mt-8 block text-left"
-            >
-              Read More
-            </a>
           </div>
         </div>
       </div>

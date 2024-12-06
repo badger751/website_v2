@@ -51,7 +51,6 @@ export default function BentoGridDemo() {
             <BentoGridItem
               key={item.id} // Use item.id as the key
               title={item.title}
-              header={item.header}
               icon={item.icon}
               href={item.href}
               className={i === 3 || i === 6 ? "md:col-span-2" : ""}

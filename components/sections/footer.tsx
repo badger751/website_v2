@@ -7,9 +7,9 @@ export default function Footer(){
         <footer className="footer bg-black text-base-content p-10">
   <nav>
     <h6 className="footer-title"  >Services</h6>
-    <a className="link link-hover" href="/" >News</a>
+    <a className="link link-hover" href="/up" >News</a>
     <a className="link link-hover" href="/" >Investigation</a>
-    <a className="link link-hover" href="/" >Videos</a>
+    <a className="link link-hover" href="/videos" >Videos</a>
     <a className="link link-hover" href="/" >Debate</a>
   </nav>
   <nav>

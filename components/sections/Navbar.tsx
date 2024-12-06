@@ -19,8 +19,8 @@ function Navbar({ className }: { className?: string }) {
     >
       <Menu setActive={setActive}>
       <HoveredLinks href="/">Home</HoveredLinks>
-      <HoveredLinks href="/soon">Videos</HoveredLinks>
-      <HoveredLinks href="/soon">News</HoveredLinks>
+      <HoveredLinks href="/videos">Videos</HoveredLinks>
+      <HoveredLinks href="/up">News</HoveredLinks>
       <HoveredLinks href="/soon">Live</HoveredLinks>
       </Menu>
     </div>

@@ -50,100 +50,37 @@ const Hero = () => {
 
         {/* Single Column Layout for Marquee Text and Static GIFs */}
         <div className="mt-8 w-full flex flex-col items-center space-y-4">
-          {/* First Line - GIF beside Text */}
-          <div className="flex items-center space-x-4 w-[105%]">
-            <Image
-              src="/gifs/new.gif" // Replace with the correct path to your GIF
-              alt="New"
-              width={50}
-              height={50}
-            />
-            <div className="overflow-hidden w-full">
-              <div className="animate-marquee flex items-center whitespace-nowrap">
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleLinkClick("/blog/1"); // Redirect to /page1
-                  }}
-                  className={`text-lg text-black ${robotoRegular.className} cursor-pointer hover:text-blue-500`}
-                >
-                  पुष्पा 2 ने तोड़ा रिकॉर्ड, 100 करोड़ की एडवांस बुकिंग!
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Second Line - GIF beside Text */}
-          <div className="flex items-center space-x-4 w-[105%]">
-            <Image
-              src="/gifs/new.gif" // Replace with the correct path to your GIF
-              alt="New"
-              width={50}
-              height={50}
-            />
-            <div className="overflow-hidden w-full">
-              <div className="animate-marquee flex items-center whitespace-nowrap">
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleLinkClick("/blog/2"); // Redirect to /page2
-                  }}
-                  className={`text-lg text-black ${robotoRegular.className} cursor-pointer hover:text-blue-500`}
-                >
-                  भारत मोबिलिटी एक्सपो 2025: ऑटो उद्योग का महाकुंभ
-
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Third Line - GIF beside Text */}
-          <div className="flex items-center space-x-4 w-[105%]">
-            <Image
-              src="/gifs/new.gif" // Replace with the correct path to your GIF
-              alt="New"
-              width={50}
-              height={50}
-            />
-            <div className="overflow-hidden w-full">
-              <div className="animate-marquee flex items-center whitespace-nowrap">
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleLinkClick("/blog/3"); // Redirect to /page3
-                  }}
-                  className={`text-lg text-black ${robotoRegular.className} cursor-pointer hover:text-blue-500`}
-                >
-                 गोविंदा का चौंकाने वाला खुलासा: 'भागम भाग 2' के लिए नहीं किया गया संपर्क, लेकिन वापसी के लिए तैयार!
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Fourth Line - GIF beside Text */}
-          <div className="flex items-center space-x-4 w-[105%]">
-            <Image
-              src="/gifs/new.gif" // Replace with the correct path to your GIF
-              alt="New"
-              width={50}
-              height={50}
-            />
-            <div className="overflow-hidden w-full">
-              <div className="animate-marquee flex items-center whitespace-nowrap">
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleLinkClick("/blog/4"); // Redirect to /page4
-                  }}
-                  className={`text-lg text-black ${robotoRegular.className} cursor-pointer hover:text-blue-500`}
-                >
-                  महाराष्ट्र में मुख्यमंत्री पद का सस्पेंस खत्म, फडणवीस बने नेता, शिंदे ने डिप्टी सीएम पद स्वीकार किया!
-                </a>
-              </div>
+          {/* Marquee Container */}
+          <div className="w-full overflow-hidden max-w-full">
+            <div className="flex flex-col space-y-4">
+              {[...Array(4)].map((_, index) => (
+                <div className="flex items-center space-x-4 w-full" key={index}>
+                  <Image
+                    src="/gifs/new.gif" // Replace with the correct path to your GIF
+                    alt="New"
+                    width={50}
+                    height={50}
+                  />
+                  <div className="overflow-hidden w-full">
+                    <div className="animate-marquee flex items-center flex-wrap"> {/* Changed to allow wrapping */}
+                      <a
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleLinkClick(`/blog/${index + 1}`); // Redirect to /blog/{index+1}
+                        }}
+                        className={`text-lg text-black ${robotoRegular.className} cursor-pointer hover:text-blue-500`}
+                      >
+                        {/* Blog Post Titles */}
+                        {index === 0 && "पुष्पा 2 ने तोड़ा रिकॉर्ड, 100 करोड़ की एडवांस बुकिंग!"}
+                        {index === 1 && "भारत मोबिलिटी एक्सपो 2025: ऑटो उद्योग का महाकुंभ"}
+                        {index === 2 && "गोविंदा का चौंकाने वाला खुलासा: 'भागम भाग 2' के लिए नहीं किया गया संपर्क, लेकिन वापसी के लिए तैयार!"}
+                        {index === 3 && "महाराष्ट्र में मुख्यमंत्री पद का सस्पेंस खत्म, फडणवीस बने नेता, शिंदे ने डिप्टी सीएम पद स्वीकार किया!"}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
